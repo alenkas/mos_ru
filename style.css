@@ -1,0 +1,94 @@
+@font-face{
+
+}
+
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: green;
+	font-family: 'Roboto Light';
+}
+
+a, a:focus, a:visited, a:hover {
+	text-decoration: none;
+	font-family: 'Roboto Medium';
+	color: #171B20;
+}
+
+.container {
+	width: 720px;
+	height: 600px;
+	border-radius: 6px;
+	background: #fff;
+	position: absolute;
+	/*top: 50%;
+	left: 50%;
+	margin-left: -360px;
+	margin-top: -300px;*/
+	padding: 30px;
+}
+
+.input-form {
+	width: 300px;
+	height: 58px;
+	border-radius: 6px;
+	border: 1.2px solid #B0B7BE;
+	margin: 11px 0;
+	padding: 7px 21px;
+	position: relative;
+}
+
+.input-form label {
+	font-family: 'Roboto Light';
+	font-size: 14px;
+	color: #808890;
+	display: block;
+}
+
+.input-form input[type='text'], .input-form input[type='email'] {
+	-webkit-appearance: none;
+	border: none;
+	display: block;
+	font-family: 'Roboto Medium';
+	font-size: 16px;
+	color: #171B20;
+	margin: 5px 0;
+	width: 100%;
+}
+
+input:focus {
+	outline: none;
+}
+
+/*.input-form input[type='text'] {
+	width: 300px;
+	height: 58px;
+	border-radius: 6px;
+	border: 1.2px solid #E63333;
+	-webkit-appearance: none;
+}*/
+
+.cities-list {
+	list-style-type: none;
+	display: none;
+	width: 300px;
+	background: #fff;
+	border-radius: 6px;
+	border: 1.2px solid #B0B7BE;
+	position: relative;
+	position: absolute;
+	top: 58px;
+	left: 0;
+	z-index: 10;
+}
+
+.cities-list li {
+	width: 300px;
+	height: 58px;
+	padding: 7px 21px;
+	position: relative;
+}
