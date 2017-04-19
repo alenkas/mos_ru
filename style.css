@@ -11,7 +11,12 @@
 body {
 	background: green;
 	font-family: 'Roboto Light';
-}
+	background: #856dd8; /* Old browsers */
+	background: -webkit-linear-gradient(bottom left, #856dd8 0%, #2328ae 100%);
+	background: -o-linear-gradient(bottom left, #856dd8 0%, #2328ae 100%);
+	background: linear-gradient(to top right, #856dd8 0%, #2328ae 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#856dd8', endColorstr='#2328ae',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}		
 
 h2 {
 	margin-bottom: 28px;
@@ -30,15 +35,19 @@ input:focus {
 .container {
 	width: auto;
 	height: auto;
+	min-width: 700px;
 	max-width: 720px;
-	max-height: 600px;
 	border-radius: 6px;
 	background: #fff;
 	position: absolute;
-	/*top: 50%;
+	top: 50%;
 	left: 50%;
-	margin-left: -360px;
-	margin-top: -300px;*/
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	/*margin-left: -360px;*/
+	/*margin-top: -300px;*/
 	padding: 30px 0 30px 30px;
 }
 
@@ -49,12 +58,15 @@ input:focus {
 }
 
 .left-block {
-	float: left;
+	display: inline-block;
+	/*float: left;*/
 	margin-right: 35px;
 }
 
 .right-block {
-	float: left;
+	display: inline-block;
+	/*float: left;*/
+	min-width: 300px;
 	max-width: 330px;
 }
 
@@ -62,7 +74,7 @@ input:focus {
 	width: 300px;
 	height: 58px;
 	border-radius: 6px;
-	border: 1.2px solid #B0B7BE;
+	border: 1px solid #B0B7BE;
 	margin: 11px 0;
 	padding: 7px 21px;
 	position: relative;
