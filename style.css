@@ -20,7 +20,7 @@ h2 {
 a, a:focus, a:visited, a:hover {
 	text-decoration: none;
 	font-family: 'Roboto Medium';
-	color: #171B20;
+	color: #5B50C6;
 }
 
 input:focus {
@@ -42,6 +42,12 @@ input:focus {
 	padding: 30px 0 30px 30px;
 }
 
+.container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 .left-block {
 	float: left;
 	margin-right: 35px;
@@ -49,6 +55,7 @@ input:focus {
 
 .right-block {
 	float: left;
+	max-width: 330px;
 }
 
 .input-form {
@@ -89,23 +96,23 @@ input:focus {
 	-webkit-appearance: none;
 }*/
 
-.checkbox:not(checked) {
+.radio:not(checked) {
 	position: absolute;
 	opacity: 0;
 }
 
-.checkbox:not(checked) + label ,
-.checkbox:not(checked) + label {
+.radio:not(checked) + label ,
+.radio:not(checked) + label {
 	position: relative;
 	color: #808890;
 }
 
-.checkbox:not(checked) + label {
+.radio:not(checked) + label {
 	padding: 0 0 0 60px;
 }
 
-.checkbox:checked + label ,
-.checkbox:checked + label {
+.radio:checked + label ,
+.radio:checked + label {
 	color: #5B50C6;
 }
 
@@ -224,6 +231,7 @@ input:focus {
 	border-radius: 6px 6px 0 6px;
 	position: relative;
 	margin-right: -10px;
+	margin-bottom: 40px;
 }
 
 .photo-upload-container div {
@@ -269,6 +277,27 @@ input:focus {
 	width: 298px;
 	height: 116px;
 	cursor: pointer;
+}
+
+.checkbox {
+	width: 24px;
+	height: 26px;
+}
+
+.checkbox label {
+	
+}
+
+.button {
+	-webkit-appearance: none;
+	width: 300px;
+	height: 58px;
+	font-family: 'Roboto Medium';
+	font-size: 18px;
+	background: #2328AE;
+	color: #fff;
+	border: 0;
+	border-radius: 100px;
 }
 
 @media and screen (max-width: 428px) {
