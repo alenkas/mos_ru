@@ -208,14 +208,19 @@ label.label-small-size {
 	position: absolute;
 	top: 0;
 	display: inline-block;
+	line-height: 28px;
 }
 
 #user_man_label {
 	left: 0;
+	padding: 0 35px 0 0;
+	z-index: 5;
 }
 
 #user_woman_label {
-	left: 54px;
+	left: 0;
+	padding: 0 0 0 40px;
+	z-index: 5;
 }
 
 .radio:not(checked) {
@@ -245,6 +250,7 @@ label.label-small-size {
 	border: 1px solid #B0B7BE;
 	border-radius: 24px;
 	position: absolute;
+	left: 105px;
 }
 
 #user_man:not(checked) + label:before,
@@ -279,7 +285,7 @@ label.label-small-size {
 }
 
 #user_man:checked + label:after {
-	right: -31px;
+	right: -2px;
 }
 
 #user_woman:not(checked) + label:before {
@@ -287,7 +293,7 @@ label.label-small-size {
 }
 
 #user_woman:checked + label:after {
-	left: -27px;
+	left: -2px;
 }
 
 .cities-list {
@@ -411,6 +417,9 @@ label.label-small-size {
 	height: 100%;
 	text-align: center;
 	line-height: 116px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "Roboto Medium", sans-serif;
 }
 
 .photo-upload input {
