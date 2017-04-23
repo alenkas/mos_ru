@@ -92,7 +92,7 @@ form {
 	position: relative;
 }
 
-.input-form label {
+.input-form label, .input-form span {
 	font-family: 'Roboto Light';
 	font-size: 16px;
 	color: #808890;

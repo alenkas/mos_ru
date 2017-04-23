@@ -1,10 +1,10 @@
 (function(){
 
 	function showCitiesList(){
-		var button = document.getElementById("button");
+		var city_container = document.getElementsByClassName("city")[0];
 		var list = document.getElementsByClassName("cities-list")[0];
 
-		button.onclick = function(){
+		city_container.onclick = function(){
 			if(list.className == "cities-list list-open"){
 				list.style.display = "none";
 				list.className = "cities-list";
@@ -12,7 +12,6 @@
 				list.style.display = "block";
 				list.className = "cities-list list-open";
 			}
-			return false;
 		};
 	}
 	showCitiesList();
