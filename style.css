@@ -84,20 +84,11 @@ input:focus {
 .container {
 	width: auto;
 	height: auto;
-	/*min-width: 700px;*/
 	width: 720px;
 	border-radius: 6px;
 	background: #fff;
 	display: table;
 	vertical-align: middle;
-	/*top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);*/
-	/*margin-left: -360px;*/
-	/*margin-top: -300px;*/
 	padding: 30px;
 	margin: 30px auto;
 }
@@ -465,7 +456,7 @@ label.label-small-size {
 .user-agreement input:checked + label:before {
 	content: "\02713";
 	font-family: "Roboto Regular", sans-serif;
-	font-size: 16px;
+	font-size: 21px;
 }
 
 .button {
@@ -496,5 +487,16 @@ label.label-small-size {
 	}
 	.container {
 		width: 360px;
+	}
+}
+
+@media screen and (max-width: 428px) {
+	body {
+		padding: 0;
+	}
+	.container {
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
 	}
 }
