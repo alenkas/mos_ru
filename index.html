@@ -14,33 +14,37 @@
 					<h2>Ваши данные</h2>
 					<div class="input-form">
 						<label for="user_name">Ф.И.О.</label>
-						<input id="user_name" type="text" required>
+						<input id="user_name" type="text" class="required" required>
+						<i class="icon-star"></i>
 					</div>
 					<div class="input-form" required>
 						<label for="user_password">Пароль</label>
-						<input id="user_password" type="text">
+						<input id="user_password" type="text" class="required" required>
+						<i class="icon-star"></i>
 					</div>
 					<div class="input-form" required>
 						<label for="user_email">Email</label>
-						<input id="user_email" type="email" required>
+						<input id="user_email" type="email" class="required" required>
+						<i class="icon-star"></i>
 					</div>
 					<div class="input-form">
-						<a href="#" id="button">me</a>
+						<a href="#" id="button">Город</a>
 						<!-- <div class="input-cities"> -->
-							<ul class="cities-list">
-								<li><a href="#">Москва</a></li>
-								<li><a href="#">Токио</a></li>
-								<li><a href="#">Лондон</a></li>
-								<li><a href="#">Лиссабон</a></li>
-								<li><a href="#">Мельбурн</a></li>
-							</ul>
+						<ul class="cities-list">
+							<li><a href="#">Москва</a></li>
+							<li><a href="#">Токио</a></li>
+							<li><a href="#">Лондон</a></li>
+							<li><a href="#">Лиссабон</a></li>
+							<li><a href="#">Мельбурн</a></li>
+						</ul>
+						<i class="icon-dropdown"></i>
 						<!-- </div> -->
 					</div>
 					<div class="input-form">
 						<label for="user_name">Телефон</label>
 						<input type="text">
 					</div>
-					<div class="input-form">
+					<div class="form">
 						<div class="user_sex_switcher">
 							<label for="user_man" id="user_man_label">Я - парень</label>
 							<input id="user_man" class="radio" type="radio" name="user_sex_switcher" checked>
@@ -49,8 +53,6 @@
 							<input id="user_woman" class="radio" type="radio" name="user_sex_switcher">
 							<label for="user_woman">Я - девушка</label>
 						</div>
-						
-						
 					</div>
 				</div>
 				<div class="right-block">

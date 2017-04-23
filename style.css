@@ -9,13 +9,18 @@
 }
 
 body {
-	background: green;
 	font-family: 'Roboto Light';
-	background: #856dd8; /* Old browsers */
-	background: -webkit-linear-gradient(bottom left, #856dd8 0%, #2328ae 100%);
-	background: -o-linear-gradient(bottom left, #856dd8 0%, #2328ae 100%);
-	background: linear-gradient(to top right, #856dd8 0%, #2328ae 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#856dd8', endColorstr='#2328ae',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 30px;
+	background: #856dd8; /* For browsers that do not support gradients */
+    /*background: -webkit-linear-gradient(left top, #856dd8 0%, #2328ae 100%); /* For Safari 5.1 to 6.0 */*/
+    /*background: -o-linear-gradient(bottom right, #856dd8 0%, #2328ae 100%); /* For Opera 11.1 to 12.0 */*/
+    /*background: -moz-linear-gradient(bottom right, #856dd8 0%, #2328ae 100%); /* For Firefox 3.6 to 15 */*/
+    /*background: linear-gradient(to bottom right, #856dd8 0%, #2328ae 100%); /* Standard syntax  */*/
+	
 }		
 
 h2 {
@@ -35,20 +40,22 @@ input:focus {
 .container {
 	width: auto;
 	height: auto;
-	min-width: 700px;
-	max-width: 720px;
+	/*min-width: 700px;*/
+	width: 720px;
 	border-radius: 6px;
 	background: #fff;
-	position: absolute;
-	top: 50%;
+	display: table;
+	vertical-align: middle;
+	/*top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 	/*margin-left: -360px;*/
 	/*margin-top: -300px;*/
-	padding: 30px 0 30px 30px;
+	padding: 30px;
+	margin: 30px auto;
 }
 
 .container:after {
@@ -57,21 +64,26 @@ input:focus {
 	clear: both;
 }
 
+form {
+	display: table-cell;
+	vertical-align: top;
+}
+
 .left-block {
 	display: inline-block;
-	/*float: left;*/
-	margin-right: 35px;
+	vertical-align: top;
+	width: 300px;
+	margin-right: 55px;
 }
 
 .right-block {
 	display: inline-block;
-	/*float: left;*/
-	min-width: 300px;
-	max-width: 330px;
+	vertical-align: top;
+	width: 300px;
 }
 
 .input-form {
-	width: 300px;
+	width: 100%;
 	height: 58px;
 	border-radius: 6px;
 	border: 1px solid #B0B7BE;
@@ -98,15 +110,37 @@ input:focus {
 	width: 100%;
 }
 
+.icon-star {
+	background: url(star.png) no-repeat;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	right: -25px;
+	margin-top: -5px;
+}
 
+.icon-dropdown {
+	background: url(drop_down.png) no-repeat;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	right: 18px;
+	margin-top: -3px;
+}
 
-/*.input-form input[type='text'] {
-	width: 300px;
+.form {
+	font-family: 'Roboto Medium';
+	font-size: 16px;
+	color: #808890;
+	/*width: 300px;*/
 	height: 58px;
 	border-radius: 6px;
-	border: 1.2px solid #E63333;
-	-webkit-appearance: none;
-}*/
+	margin: 11px 0;
+	padding: 7px 21px;
+	position: relative;
+}
 
 .radio:not(checked) {
 	position: absolute;
@@ -141,7 +175,7 @@ input:focus {
 #user_woman:not(checked) + label:before {
 	content: '';
 	position: absolute;
-	top: 1px;
+	top: 3px;
 	left: 27px;
 	width: 24px;
 	height: 24px;
@@ -155,7 +189,7 @@ input:focus {
 #user_woman:checked + label:after {
 	content: '';
 	position: absolute;
-	top: 1px;
+	top: 3px;
 	left: 3px;
 	width: 24px;
 	height: 24px;
@@ -191,10 +225,6 @@ input:focus {
 	height: 58px;
 	padding: 7px 21px;
 	position: relative;
-}
-
-.note {
-	margin-right: 30px;
 }
 
 .illustration {
@@ -312,8 +342,11 @@ input:focus {
 	border-radius: 100px;
 }
 
-@media and screen (max-width: 428px) {
+@media screen and (max-width: 760px) {
+	body {
+		overflow-y: scroll;
+	}
 	.container {
-
+		width: 360px;
 	}
 }
