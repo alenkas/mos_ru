@@ -212,7 +212,7 @@ input#user_city {
 
 #user_woman_label {
 	left: 0;
-	padding: 0 0 0 40px;
+	padding: 0 0 0 35px;
 	z-index: 5;
 }
 
@@ -223,16 +223,15 @@ input#user_city {
 
 .radio:not(checked) + label ,
 .radio:not(checked) + label {
+	font-family: "Roboto Regular", sans-serif;
+	font-size: 16px;
 	position: relative;
 	color: #000;
 }
 
-.radio:not(checked) + label {
-	/*padding: 0 0 0 60px;*/
-}
-
 .radio:checked + label ,
 .radio:checked + label {
+	font-family: "Roboto Medium", sans-serif;
 	color: #5B50C6;
 }
 
@@ -243,7 +242,7 @@ input#user_city {
 	border: 1px solid #B0B7BE;
 	border-radius: 24px;
 	position: absolute;
-	left: 105px;
+	left: 107px;
 }
 
 #user_man:not(checked) + label:before,
@@ -278,7 +277,7 @@ input#user_city {
 }
 
 #user_man:checked + label:after {
-	right: -2px;
+	right: 0px;
 }
 
 #user_woman:not(checked) + label:before {
@@ -286,7 +285,7 @@ input#user_city {
 }
 
 #user_woman:checked + label:after {
-	left: -2px;
+	left: -4px;
 }
 
 .cities-list {
