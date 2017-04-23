@@ -5,6 +5,7 @@
 	<title>Form</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -13,18 +14,18 @@
 				<div class="left-block">
 					<h2>Ваши данные</h2>
 					<div class="input-form">
-						<label for="user_name">Ф.И.О.</label>
-						<input id="user_name" type="text" class="required" required>
+						<label for="user_name">Введите Ф.И.О.</label>
+						<input id="user_name" type="text" class="required input" required>
 						<i class="icon-star"></i>
 					</div>
 					<div class="input-form" required>
 						<label for="user_password">Пароль</label>
-						<input id="user_password" type="text" class="required" required>
+						<input id="user_password" type="text" class="required input" required>
 						<i class="icon-star"></i>
 					</div>
 					<div class="input-form" required>
 						<label for="user_email">Email</label>
-						<input id="user_email" type="email" class="required" required>
+						<input id="user_email" type="email" class="required input" required>
 						<i class="icon-star"></i>
 					</div>
 					<div class="input-form">
@@ -41,8 +42,8 @@
 						<!-- </div> -->
 					</div>
 					<div class="input-form">
-						<label for="user_name">Телефон</label>
-						<input type="text">
+						<label for="user_phone">Телефон</label>
+						<input id="user_phone" type="text" class="input">
 					</div>
 					<div class="form">
 						<div class="user_sex_switcher">

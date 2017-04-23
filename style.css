@@ -13,7 +13,7 @@ body {
 	width: 100%;
     height: 100%;
     min-height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding: 30px;
 	background: #856dd8; /* For browsers that do not support gradients */
     /*background: -webkit-linear-gradient(left top, #856dd8 0%, #2328ae 100%); /* For Safari 5.1 to 6.0 */*/
@@ -94,9 +94,19 @@ form {
 
 .input-form label {
 	font-family: 'Roboto Light';
-	font-size: 14px;
+	font-size: 16px;
 	color: #808890;
-	/*display: block;*/
+	position: absolute;
+	top: 50%;
+	left: 21px;
+	margin-top: -7px;
+	transition: .2s;
+}
+
+label.label-small-size {
+	font-size: 14px;
+	top: 7px;
+	margin-top: 0;
 }
 
 .input-form input[type='text'], .input-form input[type='email'] {
@@ -106,7 +116,7 @@ form {
 	font-family: 'Roboto Medium';
 	font-size: 16px;
 	color: #171B20;
-	margin: 5px 0;
+	margin: 20px 0 14px 0;
 	width: 100%;
 }
 
