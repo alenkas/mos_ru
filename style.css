@@ -60,10 +60,10 @@ body {
     /*overflow: hidden;*/
     padding: 30px;
 	background: #856dd8; /* For browsers that do not support gradients */
-    /*background: -webkit-linear-gradient(left top, #856dd8 0%, #2328ae 100%); /* For Safari 5.1 to 6.0 */*/
-    /*background: -o-linear-gradient(bottom right, #856dd8 0%, #2328ae 100%); /* For Opera 11.1 to 12.0 */*/
-    /*background: -moz-linear-gradient(bottom right, #856dd8 0%, #2328ae 100%); /* For Firefox 3.6 to 15 */*/
-    /*background: linear-gradient(to bottom right, #856dd8 0%, #2328ae 100%); /* Standard syntax  */*/
+    background: -webkit-linear-gradient(left top, #856dd8 0%, #2328ae 100%); /* For Safari 5.1 to 6.0  */
+    background: -o-linear-gradient(bottom right, #856dd8 0%, #2328ae 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #856dd8 0%, #2328ae 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #856dd8 0%, #2328ae 100%); /* Standard syntax  */
 	
 }		
 
