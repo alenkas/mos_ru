@@ -470,6 +470,23 @@ label.label-small-size {
 	margin-top: 22px;
 }
 
+/* ---- Helper classes ---- */
+
+.hidden {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.form-group label.label-highlight {
+	color: red;
+	transition: .2s;
+}
+
+/* ---- Media classes ---- */
+
 @media screen and (max-width: 760px) {
 	body {
 		overflow-y: scroll;

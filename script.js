@@ -25,9 +25,33 @@
 		});
 
 		input.on("blur", function(){
-			$(this).prev().removeClass("label-small-size");
-			$(this).parent().removeClass("form-group-active");
+			if($(this).val().length == 0){
+				$(this).prev().removeClass("label-small-size");
+				$(this).parent().removeClass("form-group-active");	
+			}
 		});
 	}
 	inputOnActive();
+
+	
+
+	function validateForm(){
+		var form = document.getElementsByTagName("form")[0];
+		var submitButton = document.getElementById("button");
+		var inputsNeedToCheck = document.getElementsByClassName("required");
+
+		form.onsubmit = function(e){
+			var isFormValid = true;
+
+			for(var i = 0; i < inputsNeedToCheck.length; i++){
+				if(inputsNeedToCheck[i].value.length == 0){
+					inputsNeedToCheck[i].previousElementSibling.classList.add("label-highlight");
+					isFormValid = false;
+				}
+			}
+
+			return isFormValid;
+		};
+	}
+	validateForm();
 })();
