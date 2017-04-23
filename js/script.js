@@ -1,4 +1,4 @@
-(function(){
+$(document).ready(function(){
 
 	function showCitiesList(){
 		var city_container = $(".city");
@@ -98,4 +98,4 @@
 		};
 	}
 	validateForm();
-})();
+});

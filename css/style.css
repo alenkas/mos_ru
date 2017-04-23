@@ -1,47 +1,47 @@
 @font-face {
   font-family: 'Roboto Light';
-  src: url('fonts/Roboto-Light/Roboto-Light.eot');
-  src: url('fonts/Roboto-Light/Roboto-Light.woff2') format('woff2'),
-       url('fonts/Roboto-Light/Roboto-Light.woff') format('woff'),
-       url('fonts/Roboto-Light/Roboto-Light.ttf') format('truetype'),
-       url('fonts/Roboto-Light/Roboto-Light.svg#Roboto-Light') format('svg'),
-       url('fonts/Roboto-Light/Roboto-Light.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-Light/Roboto-Light.eot');
+  src: url('../fonts/Roboto-Light/Roboto-Light.woff2') format('woff2'),
+       url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'),
+       url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype'),
+       url('../fonts/Roboto-Light/Roboto-Light.svg#Roboto-Light') format('svg'),
+       url('../fonts/Roboto-Light/Roboto-Light.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url('fonts/Roboto-Regular/Roboto-Regular.eot');
-  src: url('fonts/Roboto-Regular/Roboto-Regular.woff2') format('woff2'),
-       url('fonts/Roboto-Regular/Roboto-Regular.woff') format('woff'),
-       url('fonts/Roboto-Regular/Roboto-Regular.ttf') format('truetype'),
-       url('fonts/Roboto-Regular/Roboto-Regular.svg#Roboto-Light') format('svg'),
-       url('fonts/Roboto-Regular/Roboto-Regular.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-Regular/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular/Roboto-Regular.woff2') format('woff2'),
+       url('../fonts/Roboto-Regular/Roboto-Regular.woff') format('woff'),
+       url('../fonts/Roboto-Regular/Roboto-Regular.ttf') format('truetype'),
+       url('../fonts/Roboto-Regular/Roboto-Regular.svg#Roboto-Light') format('svg'),
+       url('../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto-Medium';
-  src: url('fonts/Roboto-Medium/Roboto-Medium.eot');
-  src: url('fonts/Roboto-Medium/Roboto-Medium.woff2') format('woff2'),
-       url('fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'),
-       url('fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'),
-       url('fonts/Roboto-Medium/Roboto-Medium.svg#Roboto-Light') format('svg'),
-       url('fonts/Roboto-Medium/Roboto-Medium.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-Medium/Roboto-Medium.eot');
+  src: url('../fonts/Roboto-Medium/Roboto-Medium.woff2') format('woff2'),
+       url('../fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'),
+       url('../fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'),
+       url('../fonts/Roboto-Medium/Roboto-Medium.svg#Roboto-Light') format('svg'),
+       url('../fonts/Roboto-Medium/Roboto-Medium.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url('fonts/Roboto-Bold/Roboto-Bold.eot');
-  src: url('fonts/Roboto-Bold/Roboto-Bold.woff2') format('woff2'),
-       url('fonts/Roboto-Bold/Roboto-Bold.woff') format('woff'),
-       url('fonts/Roboto-Bold/Roboto-Bold.ttf') format('truetype'),
-       url('fonts/Roboto-Bold/Roboto-Bold.svg#Roboto-Light') format('svg'),
-       url('fonts/Roboto-Bold/Roboto-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-Bold/Roboto-Bold.eot');
+  src: url('../fonts/Roboto-Bold/Roboto-Bold.woff2') format('woff2'),
+       url('../fonts/Roboto-Bold/Roboto-Bold.woff') format('woff'),
+       url('../fonts/Roboto-Bold/Roboto-Bold.ttf') format('truetype'),
+       url('../fonts/Roboto-Bold/Roboto-Bold.svg#Roboto-Light') format('svg'),
+       url('../fonts/Roboto-Bold/Roboto-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -57,7 +57,6 @@ body {
 	width: 100%;
     height: 100%;
     min-height: 100%;
-    /*overflow: hidden;*/
     padding: 30px;
 	background: #856dd8; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left top, #856dd8 0%, #2328ae 100%); /* For Safari 5.1 to 6.0  */
@@ -167,7 +166,7 @@ input#user_city {
 }
 
 .icon-star {
-	background: url(star.png) no-repeat;
+	background: url(../images/star.png) no-repeat;
 	width: 10px;
 	height: 10px;
 	position: absolute;
@@ -177,7 +176,7 @@ input#user_city {
 }
 
 .icon-closed-eye {
-	background: url(ClosedEye.png) no-repeat;
+	background: url(../images/ClosedEye.png) no-repeat;
 	width: 26px;
 	height: 13px;
 	position: absolute;
@@ -187,7 +186,7 @@ input#user_city {
 }
 
 .icon-dropdown {
-	background: url(drop_down.png) no-repeat;
+	background: url(../images/drop_down.png) no-repeat;
 	width: 10px;
 	height: 10px;
 	position: absolute;
