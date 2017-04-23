@@ -181,6 +181,16 @@ label.label-small-size {
 	margin-top: -5px;
 }
 
+.icon-closed-eye {
+	background: url(ClosedEye.png) no-repeat;
+	width: 26px;
+	height: 13px;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -6.5px;
+}
+
 .icon-dropdown {
 	background: url(drop_down.png) no-repeat;
 	width: 10px;
