@@ -150,7 +150,8 @@ label.label-small-size {
 
 .form-group input[type='text'],
 .form-group input[type='password'], 
-.form-group input[type='email'] {
+.form-group input[type='email'],
+.form-group input[type='tel'] {
 	-webkit-appearance: none;
 	border: none;
 	display: block;
