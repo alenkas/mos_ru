@@ -8,9 +8,9 @@
 </head>
 <body>
 	<div class="container">
-		<form action="">
+		<form action="#">
 			<div>
-				<div class="left-block">
+				<div class="col">
 					<h2>Ваши данные</h2>
 					<div class="form-group form-group-bordered">
 						<label for="user_name">Введите Ф.И.О.</label>
@@ -29,8 +29,8 @@
 						<i class="icon-star"></i>
 					</div>
 					<div class="form-group form-group-bordered city">
-						<span id="button">Город</span>
-						<input type="text" id="user_city">
+						<!-- <span id="button">Город</span> -->
+						<input type="text" id="user_city" placeholder="Город">
 						<ul class="cities-list">
 							<li><a href="#">Москва</a></li>
 							<li><a href="#">Токио</a></li>
@@ -45,16 +45,16 @@
 						<input id="user_phone" type="text" class="input">
 					</div>
 					<div class="form-group">
-						<div class="user_sex_switcher">
+						<div class="user_sex_switch">
 							<input id="user_man" class="radio" type="radio" name="user_sex_switcher" checked>
 							<label for="user_man" id="user_man_label">Я - парень</label>
-							<div class="switcher-frame"></div>
+							<div class="switch-frame"></div>
 							<input id="user_woman" class="radio" type="radio" name="user_sex_switcher">
 							<label for="user_woman" id="user_woman_label">Я - девушка</label>
 						</div>
 					</div>
 				</div>
-				<div class="right-block">
+				<div class="col">
 					<h2>Важно знать!</h2>
 					<div class="note">
 						<div class="illustration">

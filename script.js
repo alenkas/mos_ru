@@ -1,19 +1,27 @@
 (function(){
 
 	function showCitiesList(){
-		var city_container = document.getElementsByClassName("city")[0];
-		var list = document.getElementsByClassName("cities-list")[0];
-		var userCity = document.getElementById("user_city");
+		var city_container = $(".city");
+		var list = $(".cities-list");
+		var cities = $(".cities-list li");
+		var userCity = $("#user_city");
 
-		city_container.onclick = function(){
-			if(list.className == "cities-list list-open"){
-				list.style.display = "none";
-				list.className = "cities-list";
+		city_container.on("click", function(){
+			if(list.hasClass("list-open")){
+				list.removeClass("list-open");
+				list.hide();
 			} else {
-				list.style.display = "block";
-				list.className = "cities-list list-open";
+				list.addClass("list-open");
+				list.show();
 			}
-		};
+		});
+
+		cities.on("click", function(){
+			var that = $(this);
+			userCity.val(function(){
+				return that.find("a").text();	
+			});
+		});
 	}
 	showCitiesList();
 
@@ -84,10 +92,6 @@
 					inputsNeedToCheck[i].previousElementSibling.classList.add("label-highlight");
 					isFormValid = false;
 				}
-			}
-
-			function validateEmail(){
-				var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
 			}
 
 			return isFormValid;
