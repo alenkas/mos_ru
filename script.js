@@ -33,7 +33,19 @@
 	}
 	inputOnActive();
 
-	
+	function hidePassword(){
+		var passInput = document.getElementById("user_password");
+		var icon = document.getElementsByClassName("icon-closed-eye")[0];
+
+		icon.onclick = function(){
+			if(passInput.getAttribute("type") == "password"){
+				passInput.setAttribute("type", "text");
+			} else {
+				passInput.setAttribute("type", "password");
+			}
+		};
+	}
+	hidePassword();
 
 	function validateForm(){
 		var form = document.getElementsByTagName("form")[0];

@@ -160,7 +160,9 @@ label.label-small-size {
 	margin-top: 0;
 }
 
-.form-group input[type='text'], .form-group input[type='email'] {
+.form-group input[type='text'],
+.form-group input[type='password'], 
+.form-group input[type='email'] {
 	-webkit-appearance: none;
 	border: none;
 	display: block;
@@ -471,14 +473,6 @@ label.label-small-size {
 }
 
 /* ---- Helper classes ---- */
-
-.hidden {
-	visibility: hidden;
-}
-
-.visible {
-	visibility: visible;
-}
 
 .form-group label.label-highlight {
 	color: red;
