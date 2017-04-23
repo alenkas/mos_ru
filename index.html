@@ -13,22 +13,22 @@
 			<div>
 				<div class="left-block">
 					<h2>Ваши данные</h2>
-					<div class="input-form">
+					<div class="form-group form-group-bordered">
 						<label for="user_name">Введите Ф.И.О.</label>
 						<input id="user_name" type="text" class="required input" required>
 						<i class="icon-star"></i>
 					</div>
-					<div class="input-form" required>
+					<div class="form-group form-group-bordered" required>
 						<label for="user_password">Пароль</label>
 						<input id="user_password" type="text" class="required input" required>
 						<i class="icon-star"></i>
 					</div>
-					<div class="input-form" required>
+					<div class="form-group form-group-bordered" required>
 						<label for="user_email">Email</label>
 						<input id="user_email" type="email" class="required input" required>
 						<i class="icon-star"></i>
 					</div>
-					<div class="input-form city">
+					<div class="form-group form-group-bordered city">
 						<span id="button">Город</span>
 						<!-- <div class="input-cities"> -->
 						<ul class="cities-list">
@@ -41,18 +41,17 @@
 						<i class="icon-dropdown"></i>
 						<!-- </div> -->
 					</div>
-					<div class="input-form">
+					<div class="form-group form-group-bordered">
 						<label for="user_phone">Телефон</label>
 						<input id="user_phone" type="text" class="input">
 					</div>
-					<div class="form">
+					<div class="form-group">
 						<div class="user_sex_switcher">
-							<label for="user_man" id="user_man_label">Я - парень</label>
 							<input id="user_man" class="radio" type="radio" name="user_sex_switcher" checked>
-							<div class="switcher-frame">
-							</div>
+							<label for="user_man" id="user_man_label">Я - парень</label>
+							<div class="switcher-frame"></div>
 							<input id="user_woman" class="radio" type="radio" name="user_sex_switcher">
-							<label for="user_woman">Я - девушка</label>
+							<label for="user_woman" id="user_woman_label">Я - девушка</label>
 						</div>
 					</div>
 				</div>
