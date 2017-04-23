@@ -92,6 +92,10 @@ form {
 	position: relative;
 }
 
+.input-form-active {
+	border-color: #636F7B;
+}
+
 .input-form label, .input-form span {
 	font-family: 'Roboto Light';
 	font-size: 16px;
@@ -222,11 +226,11 @@ label.label-small-size {
 	width: 300px;
 	background: #fff;
 	border-radius: 6px;
-	border: 1.2px solid #B0B7BE;
+	border: 1px solid #B0B7BE;
 	position: relative;
 	position: absolute;
-	top: 58px;
-	left: 0;
+	top: 56px;
+	left: -1px;
 	z-index: 10;
 }
 
@@ -235,6 +239,14 @@ label.label-small-size {
 	height: 58px;
 	padding: 7px 21px;
 	position: relative;
+}
+
+.cities-list li:hover {
+	background: #000;
+}
+
+.cities-list a {
+	line-height: 44px;
 }
 
 .illustration {

@@ -21,10 +21,12 @@
 		
 		input.on("focus", function(){
 			$(this).prev().addClass("label-small-size");
+			$(this).parent().addClass("input-form-active");
 		});
 
 		input.on("blur", function(){
 			$(this).prev().removeClass("label-small-size");
+			$(this).parent().removeClass("input-form-active");
 		});
 	}
 	inputOnActive();
