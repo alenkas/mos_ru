@@ -108,7 +108,6 @@ input:focus {
 }
 
 form {
-	/*display: table-cell;*/
 	vertical-align: top;
 }
 
@@ -492,11 +491,19 @@ input#user_city {
 /* ---- Media classes ---- */
 
 @media screen and (max-width: 760px) {
-	body {
-		overflow-y: scroll;
-	}
 	.container {
 		width: 360px;
+		position: static;
+		top: 0;
+		left: 0;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+
+	.icon-star {
+    	right: -20px;
 	}
 }
 
@@ -507,6 +514,15 @@ input#user_city {
 	.container {
 		width: 100%;
 		height: 100%;
-		margin: 0 auto;
+		position: static;
+		top: 0;
+		left: 0;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+	.icon-star {
+    	right: -20px;
 	}
 }
