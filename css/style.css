@@ -52,6 +52,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: 'Roboto Light', sans-serif;
 	width: 100%;
@@ -86,10 +90,15 @@ input:focus {
 	width: 720px;
 	border-radius: 6px;
 	background: #fff;
-	display: table;
-	vertical-align: middle;
 	padding: 30px;
-	margin: 30px auto;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .container:after {
@@ -99,7 +108,7 @@ input:focus {
 }
 
 form {
-	display: table-cell;
+	/*display: table-cell;*/
 	vertical-align: top;
 }
 
