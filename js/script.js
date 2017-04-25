@@ -1,24 +1,24 @@
 $(document).ready(function(){
 
 	function showCitiesList(){
-		var city_container = $(".city");
-		var list = $(".cities-list");
+		var cities_container = $(".city");
+		var cities_list = $(".cities-list");
 		var cities = $(".cities-list li");
-		var userCity = $("#user_city");
+		var userCityChoice = $("#user_city");
 
-		city_container.on("click", function(){
-			if(list.hasClass("list-open")){
-				list.removeClass("list-open");
-				list.hide();
+		cities_container.on("click", function(){
+			if(cities_list.hasClass("list-open")){
+				cities_list.removeClass("list-open");
+				cities_list.hide();
 			} else {
-				list.addClass("list-open");
-				list.show();
+				cities_list.addClass("list-open");
+				cities_list.show();
 			}
 		});
 
 		cities.on("click", function(){
 			var that = $(this);
-			userCity.val(function(){
+			userCityChoice.val(function(){
 				return that.find("a").text();	
 			});
 		});
@@ -34,7 +34,7 @@ $(document).ready(function(){
 		});
 
 		input.on("blur", function(){
-			if($(this).val().length == 0){
+			if($(this).val().length === 0){
 				$(this).prev().removeClass("label-small-size");
 				$(this).parent().removeClass("form-group-active");	
 			}
@@ -48,7 +48,7 @@ $(document).ready(function(){
 		var showPasswordIcon = document.getElementById("show_password");
 
 		icon.onclick = function(){
-			if(passInput.getAttribute("type") == "password"){
+			if(passInput.getAttribute("type") === "password"){
 				passInput.setAttribute("type", "text");
 				showPasswordIcon.classList.remove("icon-closed-eye");
 				showPasswordIcon.classList.add("icon-opened-eye");
@@ -65,40 +65,79 @@ $(document).ready(function(){
 		var phoneInput = document.getElementById("user_phone");
 
 		phoneInput.onfocus = function(){
-			var that = this;
-			if(this.value.length == 0){
+			if(this.value.length === 0){
 				this.value = "+7(";	
 			}
-			this.onkeyup = function(e){
-				console.log(that.value.length);
-				// Add second semicolon if user does not press 
-				// delete button
-				if(this.value.length == 6 && e.keyCode != 8){
-					this.value += ")";	
-				}
-				if(e.keyCode == 8 && this.value.length < 4){
-					this.value = "+7(";
-				}
-			};
-		};	
+		};
+		phoneInput.onkeydown = function(e){
+            // Add second semicolon if user does not press
+            // delete button
+            if(this.value.length === 6 && e.keyCode !== 8){
+                this.value += ")";
+            }
+            // Add hyphen if user does not press
+            // delete button
+            if(this.value.length === 10 && e.keyCode !== 8){
+                this.value += "-";
+            }
+            // Add second hyphen if user does not press
+            // delete button
+            if(this.value.length === 13 && e.keyCode !== 8){
+                this.value += "-";
+            }
+		};
+        phoneInput.onkeyup = function(e){
+            // If user presses delete button do not allow to delete prefix
+            if(e.keyCode === 8 && this.value.length < 4){
+                this.value = "+7(";
+            }
+        };
 	}
 	formatTelephone();
 
 	function validateForm(){
 		var form = document.getElementsByTagName("form")[0];
-		var submitButton = document.getElementById("button");
-		var inputsNeedToCheck = document.getElementsByClassName("required");
+		var fieldsToCheck = document.getElementsByClassName("required");
+		var phoneField = document.getElementById("user_phone");
 
-		form.onsubmit = function(e){
+		form.onsubmit = function(){
 			var isFormValid = true;
 
-			for(var i = 0; i < inputsNeedToCheck.length; i++){
-				if(inputsNeedToCheck[i].value.length == 0){
-					inputsNeedToCheck[i].previousElementSibling.classList.add("label-highlight");
+			for(var i = 0; i < fieldsToCheck.length; i++){
+				if(fieldsToCheck[i].value.length === 0){
+                    fieldsToCheck[i].previousElementSibling.classList.add("label-highlight");
 					isFormValid = false;
 				}
 			}
 
+			function validatePhone(){
+
+				var phone = phoneField.value;
+
+				function removeCharacters(string){
+					var char = ["+", "(", ")", "-"];
+					var array = [];
+					var phone = "";
+					for(var i = 0; i <= char.length; i++){
+
+						array = string.split(char[i]);
+						string = array[1];
+						phone += array[0];
+                        array.shift();
+					}
+					return phone;
+				}
+                var phoneNumber = parseInt(removeCharacters(phone));
+
+				if(typeof phoneNumber == "number"){
+					return true;
+				} else {
+					return false;
+				}
+			}
+			if(!validatePhone()){
+				isFormValid = false;
+			}
 			return isFormValid;
 		};
 	}
