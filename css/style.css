@@ -1,4 +1,16 @@
 @font-face {
+  font-family: 'SF NS Display';
+  src: url('../fonts/sfns/sfns.eot');
+  src: url('../fonts/sfns/sfns.woff2') format('woff2'),
+       url('../fonts/sfns/sfns.woff') format('woff'),
+       url('../fonts/sfns/sfns.ttf') format('truetype'),
+       url('../fonts/sfns/sfns.svg#Roboto-Light') format('svg'),
+       url('../fonts/sfns/sfns.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Roboto Light';
   src: url('../fonts/Roboto-Light/Roboto-Light.eot');
   src: url('../fonts/Roboto-Light/Roboto-Light.woff2') format('woff2'),
@@ -85,6 +97,9 @@ body {
 }		
 
 h2 {
+	font-family: "SF NS Display", sans-serif;
+	font-size: 26px;
+	font-weight: normal;
 	margin-bottom: 28px;
 }
 
@@ -153,7 +168,7 @@ form {
 }
 
 .form-group-bordered label, .form-group-bordered span {
-	font-family: 'Roboto Light', sans-serif;
+	font-family: 'Roboto Medium', sans-serif;
 	font-size: 16px;
 	color: #808890;
 	position: absolute;
@@ -164,6 +179,7 @@ form {
 }
 
 label.label-small-size {
+	font-family: 'Roboto Regular', sans-serif;
 	font-size: 14px;
 	top: 7px;
 	margin-top: 0;
@@ -482,6 +498,8 @@ input#user_city {
 }
 
 .user-agreement label {
+	font-family: "Roboto Light", sans-serif;
+	font-size: 16px;
 	display: inline-block;
 	position: relative;
 	margin-left: 30px;
@@ -498,6 +516,11 @@ input#user_city {
 	border-radius: 6px;
 }
 
+.user-agreement label a {
+	font-family: "Roboto Light", sans-serif;
+	font-size: 16px;
+}
+
 .user-agreement input:checked + label:before {
 	content: "\02713";
 	font-family: "Roboto Regular", sans-serif;
@@ -509,7 +532,8 @@ input#user_city {
 	width: 100%;
 	height: 58px;
 	font-family: 'Roboto Medium', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
+	text-transform: uppercase;
 	background: #2328AE;
 	color: #fff;
 	border: 0;
