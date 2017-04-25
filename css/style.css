@@ -176,44 +176,41 @@ input#user_city {
 	margin: 14px 0;
 }
 
-.icon-star {
-	background: url(../images/star.png) no-repeat;
-	width: 10px;
-	height: 10px;
+.icon {
+	background: url(../images/icons.svg) no-repeat;
+	background-position: 0 0;
 	position: absolute;
 	top: 50%;
+	display: block;
+}
+
+.icon-star {
+	background-position: -8px -30px;
+	width: 10px;
+	height: 10px;
 	right: -25px;
 	margin-top: -5px;
 }
 
 .icon-closed-eye {
-	background: url(../images/ClosedEye.png) no-repeat;
+	background-position: -39px -5px;
 	width: 26px;
 	height: 19px;
-	display: block;
-	position: absolute;
-	top: 50%;
 	right: 15px;
-	/*margin-top: -6.5px;*/
 }
 
 .icon-opened-eye {
-	background: url(../images/OpenedEye.svg) no-repeat;
+	background-position: 0 0;
 	width: 26px;
 	height: 19px;
-	display: block;
-	position: absolute;
-	top: 50%;
 	right: 15px;
 	margin-top: -11.5px;
 }
 
 .icon-dropdown {
-	background: url(../images/drop_down.png) no-repeat;
+	background-position: -47px -30px;;
 	width: 10px;
 	height: 10px;
-	position: absolute;
-	top: 50%;
 	right: 18px;
 	margin-top: -3px;
 }
