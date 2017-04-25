@@ -114,19 +114,22 @@ $(document).ready(function(){
 
 				var phone = phoneField.value;
 
+				if(!phone) return false;
+
 				function removeCharacters(string){
-					var char = ["+", "(", ")", "-"];
+					var chars = ["+", "(", ")", "-"];
 					var array = [];
 					var phone = "";
-					for(var i = 0; i <= char.length; i++){
+					for(var i = 0; i <= chars.length; i++){
 
-						array = string.split(char[i]);
+						array = string.split(chars[i]);
 						string = array[1];
 						phone += array[0];
                         array.shift();
 					}
 					return phone;
 				}
+
                 var phoneNumber = parseInt(removeCharacters(phone));
 
 				if(typeof phoneNumber == "number"){
