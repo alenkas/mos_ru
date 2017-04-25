@@ -189,11 +189,23 @@ input#user_city {
 .icon-closed-eye {
 	background: url(../images/ClosedEye.png) no-repeat;
 	width: 26px;
-	height: 13px;
+	height: 19px;
+	display: block;
 	position: absolute;
 	top: 50%;
 	right: 15px;
-	margin-top: -6.5px;
+	/*margin-top: -6.5px;*/
+}
+
+.icon-opened-eye {
+	background: url(../images/OpenedEye.svg) no-repeat;
+	width: 26px;
+	height: 19px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -11.5px;
 }
 
 .icon-dropdown {

@@ -45,12 +45,17 @@ $(document).ready(function(){
 	function hidePassword(){
 		var passInput = document.getElementById("user_password");
 		var icon = document.getElementsByClassName("icon-closed-eye")[0];
+		var showPasswordIcon = document.getElementById("show_password");
 
 		icon.onclick = function(){
 			if(passInput.getAttribute("type") == "password"){
 				passInput.setAttribute("type", "text");
+				showPasswordIcon.classList.remove("icon-closed-eye");
+				showPasswordIcon.classList.add("icon-opened-eye");
 			} else {
 				passInput.setAttribute("type", "password");
+				showPasswordIcon.classList.remove("icon-opened-eye");
+				showPasswordIcon.classList.add("icon-closed-eye");
 			}
 		};
 	}
