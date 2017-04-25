@@ -491,7 +491,7 @@ input#user_city {
 /* ---- Media classes ---- */
 
 @media screen and (max-width: 760px) {
-	.container {
+	.form {
 		width: 360px;
 		position: static;
 		top: 0;
@@ -507,7 +507,13 @@ input#user_city {
 	}
 }
 
-@media screen and (max-device-width: 428px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 	body {
 		padding: 0;
 	}
@@ -522,26 +528,52 @@ input#user_city {
 		transform: none;
 	}
 	.col {
-		width: 85%;
+		width: 98%;
+		display: block;
 	}
 
 	.icon-star {
-    	right: -20px;
+    	right: -18px;
 	}
 
 	.illustration {
-    	margin-right: 3px;
+    	margin-right: 5px;
 	}
 
+	.photo-upload-container {
+    	width: 100%;
+	}	
+
 	.switch-frame {
-    	left: 102px;
+    	left: 103px;
 	}
 
 	#user_man_label {
-    	padding: 0 30px 0 0;
+    	padding: 0 31px 0 0;
 	}
 
 	#user_woman_label {
-    	padding: 0 0 0 26px;
+    	padding: 0 0 0 28px;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  	.illustration {
+    	margin-right: 22px;
+	}
+	.switch-frame {
+    	left: 107px;
+	}
+
+	#user_man_label {
+    	padding: 0 35px 0 0;
+	}
+
+	#user_woman_label {
+    	padding: 0 0 0 35px;
 	}
 }
