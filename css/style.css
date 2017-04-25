@@ -87,9 +87,8 @@ input:focus {
 }
 
 .form {
-	width: auto;
-	height: auto;
 	width: 720px;
+	height: auto;
 	border-radius: 6px;
 	background: #fff;
 	padding: 30px;
@@ -121,7 +120,7 @@ form {
 }
 
 .col:last-child {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .form-group {
@@ -177,7 +176,7 @@ input#user_city {
 }
 
 .icon {
-	background: url(../images/icons.svg) no-repeat;
+	background: url("../images/icons.svg") no-repeat;
 	background-position: 0 0;
 	position: absolute;
 	top: 50%;
@@ -296,7 +295,7 @@ input#user_city {
 }
 
 #user_man:checked + label:after {
-	right: 0px;
+	right: 0;
 }
 
 #user_woman:not(checked) + label:before {
@@ -314,7 +313,6 @@ input#user_city {
 	background: #fff;
 	border-radius: 6px;
 	border: 1px solid #B0B7BE;
-	position: relative;
 	position: absolute;
 	top: 56px;
 	left: -1px;
@@ -499,7 +497,7 @@ input#user_city {
 	transition: .2s;
 }
 
-/* ---- Media classes ---- */
+/* ---- Media quries ---- */
 
 @media screen and (max-width: 760px) {
 	.form {
@@ -528,6 +526,7 @@ input#user_city {
 		width: 100%;
 		height: 100%;
 		padding: 20px;
+		margin: 0 auto;
 		position: static;
 		-webkit-transform: none;
 		-moz-transform: none;
@@ -567,6 +566,7 @@ input#user_city {
 		width: 100%;
 		height: 100%;
 		padding: 20px;
+		margin: 0 auto;
 		position: static;
 		-webkit-transform: none;
 		-moz-transform: none;
