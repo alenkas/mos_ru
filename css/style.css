@@ -547,6 +547,10 @@ input#user_city {
     	margin-right: 5px;
 	}
 
+	.cities-list, .cities-list li {
+		width: 100.5%;
+	}
+
 	.photo-upload-container {
     	width: 100%;
 	}	
@@ -580,6 +584,10 @@ input#user_city {
 
 	.illustration {
     	margin-right: 5px;
+	}
+
+	.cities-list, .cities-list li {
+		width: 100.5%;
 	}
 
 	.photo-upload-container {
